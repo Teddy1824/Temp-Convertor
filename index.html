@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+    <h1 class="head">TEMPERATURE CONVERTOR</h1>
+
+        <div id="wrapperDiv" class="main">
+            <div id="div1" style="padding:20px;float:left">
+                <p>Convert Fahrenheit degrees Celsius</p>
+                <div class="submit"> 
+                 <div style="float: left;">
+                     <form action="" id="toCelsius" onsubmit="return false;">
+                         <div > 
+                             <input class="text" type="text" id="degFahren" value="32" />
+                        </div>
+                         <div class="submit"> 
+                             <input class="btn" type="submit" value="Submit" onclick="convertCelsius()" />
+                        </div>
+                          <div class="button">
+                                <button id="clear" class="btn w-100 btn primary" onclick="clearSum()">clear</button>
+                            </div>
+
+                         <p class="box" id="resultCelsius"></p>
+                     </form>
+</div>
+                </div></div>
+            <div id="div2" style="padding:20px;float:left">
+                <p> Convert Celsius degrees to Fahrenheit</p>
+                <div class="submit">
+                    <div style="float: left;">
+                        <form action="" id="toFahrenheit" onsubmit="return false;">
+                            <div >
+                                 <input class="text" type="text" id="degCelsius" value="0" />
+                            </div>
+                            <div class="submit"> 
+                                <input class="btn" type="submit" value="Submit" onclick="convertFahrenheit()" />
+                            </div> 
+                            <div class="button">
+                                <button class="btn w-100 btn primary" onclick="clearSum('')">clear</button>
+                            </div>
+
+
+                            <p class="box" id="resultFahren"></p>
+
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+    <script src="JS/scripts.js"></script>
+
+
+</body>
+</html>
