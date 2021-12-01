@@ -35,6 +35,12 @@ function convertCelsius() {
   }
   
   function clearSum() {
-      resultCelsius = "";
-      document.getElementById("degFahren").innerText = resultCelsius;
-    }
+    document.getElementById("degFahren").value = '';
+    document.getElementById("resultCelsius").innerHTML = '';
+  }
+
+
+  function clearWords() {
+    document.getElementById("degCelsius").value = '';
+    document.getElementById("resultFahren").innerHTML = '';
+  }

@@ -1,38 +1,107 @@
+body {
+    background-image: url(../Images/lea-l-q--99IzY8Lw-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.container {
+    border-style: groove;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgb(0 0 0);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    width: 50%;
+    /* margin-left: 450px;
+    margin-top: 150px; */
+}
+
 .text{
     border: solid;
     background-color:white;
-    width: 300px;
-    height: 200px;
-
+    width: 250px;
+    height: 90px;
+    text-align: center;
+    font-size: xx-large;
 }
 
  .head{
+     flex-wrap: wrap;
      display: flex;
      justify-content: center;
+     text-align: center;
  }
+
 .submit{
     padding-top: 10px;
     display: flex;
     justify-content: center;
 
 }
- .btn{
 
-     color: tomato;
+ .btn{
+    color: tomato;
  }
+
  .main{
      display: flex;
+     flex-wrap: wrap;
      justify-content: center;
  }
 
- /* .box{
-     border: solid;
-     background-color: thistle;
+  p {
+      font-size: xx-large;
+  }
 
- } */
+  .box {
+      font-size: x-large;
+  }
 
  .button{
     display: flex;
     justify-content: center;
     padding-top: 5px;
  }
+
+.btn {
+    color: white;
+    background-color: peru;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn:after {
+    /* content: '\00bb'; */
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+  }
+  
+  .btn:hover{
+    padding-right: 25px;
+  }
+  
+  .btn:hover:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.w-100 {
+    width: 34% !important;
+}
+
+.input {
+    text-align: center;
+}
